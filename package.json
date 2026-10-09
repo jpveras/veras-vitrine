@@ -1,0 +1,23 @@
+{
+  "name": "veras-vitrine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test:parse": "node scripts/test-parse.mjs",
+    "webhook": "node scripts/set-webhook.mjs",
+    "import": "node scripts/import-telegram-export.mjs",
+    "local": "node scripts/local-poller.mjs",
+    "start:local": "node scripts/dev-all.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.45.4",
+    "next": "14.2.35",
+    "qrcode": "1.5.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
